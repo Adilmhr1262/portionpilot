@@ -17,7 +17,12 @@ function check(name, ok, extra) {
 (async () => {
   const browser = await firefox.launch({ headless: true });
   try {
-    const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+    const context = await browser.newContext({
+      viewport: { width: 1280, height: 800 },
+      // This VM's Firefox lacks the CA chain for github.io (SEC_ERROR_UNKNOWN_ISSUER);
+      // curl already proves the site serves HTTP 200 with the right title.
+      ignoreHTTPSErrors: true,
+    });
     const page = await context.newPage();
     const consoleErrors = [];
     const externalRequests = [];
