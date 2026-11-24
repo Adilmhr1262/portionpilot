@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PortionPilot logo">
+  <rect width="64" height="64" rx="14" fill="#166534"/>
+  <path d="M20 26a4 4 0 0 1 4-4c1-4 4-7 8-7s7 3 8 7a4 4 0 0 1 4 4 4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z" fill="none" stroke="#FAF9F6" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M18 34h28v12a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V34z" fill="#EA580C"/>
+  <path d="M26 40h12" stroke="#FAF9F6" stroke-width="3" stroke-linecap="round"/>
+</svg>
